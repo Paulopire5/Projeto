@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <!-- Including the bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .navbar-nav {
+            margin-left: auto;
+        }
+    </style>
+    <title>RNUPCI</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/login.css" />
+
+</head>
+
+<body style="background-image: url('../images/clinica.jpg');">
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul>
+            <li>
+                <img src="../images/RNU.png" alt="SNS" width="100px" height="50px" />
+            </li>
+            <li>
+                <img src="../images/SNS.jpg" alt="SNS" width="100px" height="50px" />
+            </li>
+            <li>
+                <img src="../images/spms.jpg" alt="spms" width="120px" height="50px" />
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="ajuda.html">
+                    <button class="btn_ajuda">Ajuda</button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="card">
+        <div id="card-content">
+            <div id="card-title">
+                <h2>LOGIN</h2>
+            </div>
+            <img src="../images/loginIcon.ico">
+            <form method="post" class="form">
+
+                <label for="user-password" style="padding-top:22px"> &nbsp;Email ou telemóvel </label>
+                <input id="user-email" class="form-content" name="email" place required />
+                <div class="form-border"></div>
+
+
+                <label for="user-password" style="padding-top:22px"> &nbsp;Senha de acesso </label>
+                <input id="user-password" class="form-content" type="password" name="password" required />
+                <div class="form-border"></div>
+
+                <span style="padding-top:15px">
+                    <input type="checkbox" id="lembrar-dados" name="lembrar-dados" value="Lembrar dados" />
+                    <label for="lembrar-dados"> &nbsp;Lembrar dados </label>
+                </span>
+            </form>
+            <button id="submit-btn" name="submit" style="margin-left:75px" onclick="window.location.href='plataformaUtente.html';" style="margin-left:55px;">INICIAR SESSÃO</button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

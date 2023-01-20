@@ -1,0 +1,101 @@
+.btn--form {
+    margin-top: 50px;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #346a91;
+    text-align: center;
+    background-color: rgb(197, 212, 243);
+    color: #39739d;
+    font-size: 13px;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 8px .8em;
+    color: black;
+}
+
+.form--selected {
+    background-color: rgb(95, 130, 205);
+    color: white;
+}
+
+main {
+    background-color: white;
+    backdrop-filter: blur(200px);
+    box-shadow: 0 3rem 5rem rgba(95, 94, 94, 0.214);
+    border: 1px solid #346a91;
+    margin: auto;
+    margin-top: 30px;
+    filter: blur();
+    overflow: auto;
+
+    width: 50rem;
+    height: 35rem;
+}
+
+p {
+    margin-left: 5px;
+    color: #39739d;
+    width: fit-content;
+    font-size: medium;
+}
+
+.buttonSubmeter {
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 30px;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+table {
+    width: 100%;
+    border: 1px solid;
+}
+
+th {
+    border-bottom: 1px solid;
+    color: white;
+}
+
+tr {
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(197, 212, 242);
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+tr:first-child {
+    background-color: rgb(96, 132, 197);
+}
+
+td:not(:last-child),
+th:not(:last-child) {
+    border-right: 3px solid black;
+    margin-right: -3px;
+}
+
+.btn--menu--disabled {
+    background-color: rgb(183, 183, 183);
+    color: black;
+}
+
+.btn--menu--enabled {
+    background-color: rgb(197, 212, 243);
+    color: black;
+}
+
+hr {
+
+    border: 2px solid rgb(95, 130, 205);
+    outline: 1px solid rgb(95, 130, 205);
+}
+
+.fila--btns>button{
+    margin-right:15px;
+}

@@ -1,0 +1,150 @@
+<html>
+
+<head>
+    <!-- Including the bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .navbar-nav {
+            margin-left: auto;
+        }
+    </style>
+    <title>RNUPCI</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/inserirCandidatura.css" />
+
+</head>
+
+<body style="background-image: url('../images/clinica.jpg');">
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul>
+            <li>
+                <img src="../images/RNU.png" alt="SNS" width="100px" height="50px" />
+            </li>
+            <li>
+                <img src="../images/SNS.jpg" alt="SNS" width="100px" height="50px" />
+            </li>
+            <li>
+                <img src="../images/spms.jpg" alt="spms" width="120px" height="50px" />
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="ajuda.html">
+                    <button class="btn_ajuda">Ajuda</button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div>
+        <form>
+            <div>
+                <legend><b>Contactos pessoais</b></legend>
+                <div>
+                    <label>Telefone</label>
+                    <input id="telefoneUtente" type="tel" style="margin-left:49px" disabled>
+                </div>
+                <div>
+                    <label>Telemóvel</label>
+                    <input id="telemovelUtente" type="tel" style="margin-left:37px" disabled>
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input id="emailUtente" type="email" style="margin-left:69px" disabled>
+                </div>
+
+                <div>
+                    <label>Outro contacto</label>
+                    <select style="margin-left:4px" disabled id="outroContacto">
+                        <option disabled selected value="">Escolha uma opção</option>
+                        <option value="empty"></option>
+                        <option value="opc1">Opção 1</option>
+                        <option value="opc2">Opção 1</option>
+                        <option value="opc3">Opção 1</option>
+                        <option value="opc4">Opção 1</option>
+                    </select>
+                    <input type="text" disabled id="dadosOutroContacto" />
+                </div>
+
+                <div>
+                    <label>Observacões</label>
+                    <input type="text" style="margin-left:15px" disabled id="observacoes">
+                </div>
+
+            </div>
+            <hr>
+            <div>
+                <legend><b>Morada</b></legend>
+                <div>
+                    <label>Morada do utente:</label>
+                    <span>
+                        <span>
+                            <input type="radio" id="rbNacional" name="Nacional" value="Nacional" disabled>
+                            <label for="Nacional" style="margin-left:-8px;">Nacional</label>
+                        </span>
+
+                        <span>
+                            <input type="radio" id="rbEstrangeira" name="Estrangeiro" value="Estrangeiro" disabled>
+                            <label for="Estrangeiro" style="margin-left:-8px;">Estrangeiro</label>
+                        </span>
+                    </span>
+                </div>
+                <div>
+                    <label>Rua:</label>
+                    <input type="text" style="margin-left:61px" disabled id="fieldRua">
+                    <label>Descrição:</label>
+                    <input type="text" style="margin-left:11px" disabled id="fieldDescricao">
+                </div>
+                <div>
+                    <label>Edifício:</label>
+                    <input type="text" style="margin-left:38px" disabled id="fieldEdificio">
+                    <label>Porta:</label>
+                    <input type="text" style="margin-left:45px" disabled id="fieldPorta">
+                </div>
+                <div>
+                    <label>Andar:</label>
+                    <input type="text" style="margin-left:48px" disabled id="fieldAndar">
+                    <label>Lado:</label>
+                    <input type="text" style="margin-left:47px" disabled id="fieldLado">
+                </div>
+                <div>
+                    <label>Lugar:</label>
+                    <input type="text" style="margin-left:49px" disabled id="fieldLugar">
+                    <label>Localidade:</label>
+                    <input type="text" disabled id="fieldLocalidade">
+                </div>
+                <div>
+                    <label>Distrito:</label>
+                    <input type="text" style="margin-left:40px" disabled id="fieldDistrito">
+                    <label>Conselho:</label>
+                    <input type="text" style="margin-left:16px" disabled id="fieldConselho">
+                    <label>Freguesia:</label>
+                    <input type="text" disabled id="fieldFreguesia">
+                </div>
+
+                <div>
+                    <label>Cód. Postal:</label>
+                    <input type="text" style="width: 75px;" disabled id="fieldCodPostal1">
+                    <b>-</b>
+                    <input type="text" style="width: 75px;" disabled id="fieldCodPostal2">
+                    <label>Lugar Postal:</label>
+                    <input type="text" disabled id="fieldLugarPostal">
+                </div>
+            </div>
+
+        </form>
+        <a href="validarTipologia.html">
+            <button style="margin-right:10px;margin-left:auto;">Página seguinte</button>
+        </a>
+    </div>
+    <script src="../scripts/validarCandidatura2.js"> </script>
+
+</body>
+
+</html>

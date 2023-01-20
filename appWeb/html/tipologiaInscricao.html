@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <!-- Including the bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .navbar-nav {
+            margin-left: auto;
+        }
+    </style>
+    <title>RNUPCI</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/tipologiaInscricao.css" />
+
+</head>
+
+<body style="background-image: url('../images/clinica.jpg');">
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul>
+            <li>
+                <img src="../images/RNU.png" alt="SNS" width="100px" height="50px" />
+            </li>
+            <li>
+                <img src="../images/SNS.jpg" alt="SNS" width="100px" height="50px" />
+            </li>
+            <li>
+                <img src="../images/spms.jpg" alt="spms" width="120px" height="50px" />
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="ajuda.html">
+                    <button class="btn_ajuda">Ajuda</button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div>
+        <form>
+            <hr>
+            <div>
+                <div>
+                    <label>ACES</label>
+                    <select id="selectACES" name="selectACES" style="margin-left:93px">
+                        <option value="opc1">Opção 1</option>
+                        <option value="opc2">Opção 2</option>
+                        <option value="opc3">Opção 3</option>
+                        <option value="opc4">Opção 4</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Centro de Saúde</label>
+                    <select id="selectCentroSaude" name="selectCentroSaude" style="margin-left:16px">
+                        <option value="opc1">Opção 1</option>
+                        <option value="opc2">Opção 2</option>
+                        <option value="opc3">Opção 3</option>
+                        <option value="opc4">Opção 4</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Unidade Funcional</label>
+                    <select id="selectUnidadeFuncional" name="selectUnidadeFuncional" style="margin-left:4px;">
+                        <option value="opc1">Opção 1</option>
+                        <option value="opc2">Opção 2</option>
+                        <option value="opc3">Opção 3</option>
+                        <option value="opc4">Opção 4</option>
+                    </select>
+                </div>
+                <span>
+                    <label>Médico de Família</label>
+                    <input type="text" />
+
+                </span>
+            </div>
+            <hr>
+            <div>
+                <legend><b>Tipologia da Inscrição</b></legend>
+                <div>
+                    <div>
+                        <label>Morada:</label>
+                        <span>
+                            <span>
+                                <input type="radio" id="rbMoradaNacional" name="drone" value="Nacional">
+                                <label for="Nacional" style="margin-left:-8px;">Nacional</label>
+                            </span>
+
+                            <span>
+                                <input type="radio" id="rbMoradaEstrangeiro" name="drone" value="Estrangeiro">
+                                <label for="Estrangeiro" style="margin-left:-8px;">Estrangeiro</label>
+                            </span>
+                        </span>
+                    </div>
+                    <div>
+                        <label>Residência</label>
+                        <input type="text" />
+                    </div>
+                    <div>
+                        <label>Deu último contacto com os CSP</label>
+                        <input type="date" style='margin-left:22px' />
+                    </div>
+                    <div>
+                        <label>Tipo do documento de identificação:</label>
+                        <select id="paisNacionalidade" name="paisNacionalidade" style="width: 325px;">
+                            <option value="" disabled selected>Escolha uma opção</option>
+                            <option value="cartaoCidadao">Bilhete de Identidade / Cartão do Cidadão</option>
+                            <option value="passaporte">Passaporte</option>
+                            <option value="cedulaMilitar">Cédula Militar</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Caso seja provisória</label>
+                        <br>
+                        <label> Duração restante da inscrição:</label>
+                        <input type="text" style="width:50px;">
+                        <label> dias restantes.</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <a href="#">
+            <button>Imprimir</button>
+        </a>
+        <a href="menuPrincipal.html">
+            <button>Prosseguir</button>
+        </a>
+    </div>
+
+
+
+
+</body>
+
+</html>

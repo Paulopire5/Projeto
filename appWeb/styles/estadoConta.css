@@ -1,0 +1,50 @@
+label {
+    font-family: "Raleway", sans-serif;
+    font-size: 11pt;
+}
+
+#card {
+    background: #fbfbfb;
+    border-radius: 8px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    margin: 6rem auto 8.1rem auto;
+    width: 700px;
+    height: 300px;
+}
+
+#card-content {
+    padding: 12px 44px;
+    height:300px;
+    color:green;
+}
+
+#card-title {
+    color:black;
+    font-family: "Raleway Thin", sans-serif;
+    letter-spacing: 4px;
+    padding-bottom: 23px;
+    padding-top: 13px;
+    text-align: center;
+}
+
+.text-content {
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    background: #fbfbfb;
+    border: none;
+    outline: none;
+    padding-top: 14px;
+}
+
+button {
+    margin: 0 auto;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: "Raleway SemiBold", sans-serif;
+    height: 42.3px;
+    margin:auto auto auto auto;
+    width: 150px;
+}

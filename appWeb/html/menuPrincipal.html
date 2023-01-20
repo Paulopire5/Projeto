@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <!-- Including the bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .navbar-nav {
+            margin-left: auto;
+        }
+    </style>
+    <title>RNUPCI</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/menuPrincipal.css" />
+
+</head>
+
+<body style="background-image: url('../images/clinica.jpg');">
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul>
+            <li>
+                <img src="../images/RNU.png" alt="SNS" width="100px" height="50px" />
+            </li>
+            <li>
+                <img src="../images/SNS.jpg" alt="SNS" width="100px" height="50px" />
+            </li>
+            <li>
+                <img src="../images/spms.jpg" alt="spms" width="120px" height="50px" />
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="ajuda.html">
+                    <button class="btn_ajuda">Ajuda</button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <main id="form--container">
+        <div id="div--btns">
+            <button class="btn--form form--selected" id="btn-inscricao">
+                Inscrição
+            </button>
+            <button class="btn--form" id="btn-documentos">
+                Documentos
+            </button>
+            <button class="btn--form" id="btn-beneficios">
+                Benefícios
+            </button>
+            <button class="btn--form" id="btn-subsistemas">
+                Subsistemas
+            </button>
+            <button class="btn--form" id="btn-verificacao">
+                Verificação
+            </button>
+        </div>
+
+        <div id="form--content">
+            <div class="div--inscricao" id="form-inscricao">
+                <!--  formulário da inscrição é inserido aqui (js)  -->
+            </div>
+
+            <div class="div--documentos" id="form-documentos" hidden>
+                <!--  formulário dos documentos é inserido aqui (js)  -->
+            </div>
+
+            <div class="div--beneficios" id="form-beneficios" hidden>
+                <!--  formulário dos benefícios é inserido aqui (js)  -->
+            </div>
+            <div class="div--subsistemas" id="form-subsistemas" hidden>
+                <!--  formulário do subsistema é inserido aqui (js)  -->
+            </div>
+            <div class="div--verificacao" id="form-verificacao" hidden>
+                <!--  formulário da verificação é inserido aqui (js)  -->
+            </div>
+            <div class="div--entidades" id="form-entidades" hidden>
+                <!--  formulário da verificação é inserido aqui (js)  -->
+            </div>
+        </div>
+    </main>
+
+    <div>
+        <script src="../scripts/main.js"></script>
+
+        <script src="../scripts/forms/formInscricao.js"></script>
+        <script src="../scripts/forms/formDocumentos.js"></script>
+        <script src="../scripts/forms/formBeneficios.js"></script>
+        <script src="../scripts/forms/formSubsistemas.js"></script>
+        <script src="../scripts/forms/formVerificacao.js"></script>
+        <script src="../scripts/forms/formEntidades.js"></script>
+
+        <script src="../scripts/dados.js"></script>
+        <script src="../scripts/renderizar.js"></script>
+        <script src="../scripts/handleButtonClicks.js"></script>
+    </div>
+
+
+</body>

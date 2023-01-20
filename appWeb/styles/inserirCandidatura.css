@@ -1,0 +1,21 @@
+legend{
+    margin-left: 10px;
+}
+p,
+label {
+    margin-left: 15px;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: 0.4rem;
+}
+
+hr{
+    width:98%;
+    border: 2px solid white;
+    outline:1px solid black;
+}
+span{
+    width:100%;
+}

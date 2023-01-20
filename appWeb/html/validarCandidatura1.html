@@ -1,0 +1,199 @@
+<html>
+
+<head>
+    <!-- Including the bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .navbar-nav {
+            margin-left: auto;
+        }
+    </style>
+    <title>RNUPCI</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/inserirCandidatura.css" />
+
+    <script src="../scripts/dados.js"></script>
+</head>
+
+<body style="background-image: url('../images/clinica.jpg');">
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul>
+            <li>
+                <img src="../images/RNU.png" alt="SNS" width="100px" height="50px" />
+            </li>
+            <li>
+                <img src="../images/SNS.jpg" alt="SNS" width="100px" height="50px" />
+            </li>
+            <li>
+                <img src="../images/spms.jpg" alt="spms" width="120px" height="50px" />
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="ajuda.html">
+                    <button class="btn_ajuda">Ajuda</button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div>
+        <form>
+            <div>
+                <legend><b>Identificação do Utente</b></legend>
+                <span>
+                    <label>Nome Completo</label>
+                    <input type="text" required style="margin-left:18px;width:500px" disabled id="nomeCompletoUtente" />
+
+                    <label>Género:</label>
+                    <span>
+                        <span>
+                            <input type="radio" id="rbMasculino" name="drone" value="Masculino" disabled>
+                            <label for="Masculino" style="margin-left:-8px;">Masculino</label>
+                        </span>
+
+                        <span>
+                            <input type="radio" id="rbFeminino" name="drone" value="Feminino" disabled>
+                            <label for="Feminino" style="margin-left:-8px;">Feminino</label>
+                        </span>
+                    </span>
+                </span>
+
+                <div>
+                    <label>Data Nascimento:</label>
+                    <input type="date" min="1900-01-01" max="2030-12-31" value="2000-01-01" required id="dataNascimento"
+                        disabled>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <legend><b>Nacionalidade / Naturalidade</b></legend>
+                <div>
+                    <div>
+                        <label>País Nacionalidade</label>
+                        <select id="paisNacionalidade" name="paisNacionalidade" style="width: 200px;" disabled>
+                            <script>
+                                var select = document.getElementById('paisNacionalidade');
+                                var option = document.createElement('option');
+                                option.value = 'Escolha uma opção';
+                                option.text = 'Escolha uma opção';
+                                option.setAttribute('selected', 'true');
+                                option.setAttribute('disabled', 'true');
+                                select.appendChild(option);
+                                for (var i = 0; i < paises.length; i++) {
+                                    option = document.createElement('option');
+                                    option.value = paises[i];
+                                    option.text = paises[i];
+                                    select.appendChild(option);
+                                }
+                            </script>
+                        </select>
+                    </div>
+                    <div>
+                        <label>País Naturalidade</label>
+                        <select id="paisNaturalidade" name="paisNaturalidade" style="width: 200px;margin-left: 11px;"
+                            disabled>
+                            <script>
+                                var select = document.getElementById('paisNaturalidade');
+                                var option = document.createElement('option');
+                                option.value = 'Escolha uma opção';
+                                option.text = 'Escolha uma opção';
+                                option.setAttribute('selected', 'true');
+                                option.setAttribute('disabled', 'true');
+                                select.appendChild(option);
+                                for (var i = 0; i < paises.length; i++) {
+                                    option = document.createElement('option');
+                                    option.value = paises[i];
+                                    option.text = paises[i];
+                                    select.appendChild(option);
+                                }
+                            </script>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Região</label>
+                        <input type="text" required style="margin-left:88; width:200px" id="regiaoUtente" disabled />
+                        <label>Cidade</label>
+                        <input type="text" required id="cidadeUtente" disabled />
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <legend><b> Documentação </b></legend>
+                <div>
+                    <div>
+                        <label>Doc. Identificação: </label>
+                        <select id="documentoIdentificacao" name="documentoIdentificacao" style="width: 325px;"disabled>
+                            <option value="" disabled selected>Escolha uma opção</option>
+                            <option value="bilheteIdentidadeCartaoCidadao">Bilhete de Identidade / Cartão do Cidadão</option>
+                            <option value="passaporte">Passaporte</option>
+                            <option value="cedulaMilitar">Cédula Militar</option>
+                        </select>
+                        :
+                        <input type="text" disabled id="dadosDocumento">
+                    </div>
+                    <div>
+                        <label>NIF</label>
+                        <input id="fieldNIF" type="text" style="margin-left:106px" disabled>
+                        <label>NISS</label>
+                        <input id="fieldNISS"type="text" style="margin-left:88px" disabled>
+                    </div>
+                    <div>
+                        <label>Nº Visto Res.</label>
+                        <input id="fieldVistoResidencia"type="text" style="margin-left:37px" disabled>
+                        <label>Data validade</label>
+                        <input id="fieldDuracaoVisto"type="date" min="2000-01-01" value="2020-01-01" style="margin-left:28px" disabled>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <legend><b> Profissão/Situação profissional </b></legend>
+                <div>
+                    <div>
+                        <label>Profissão</label>
+                        <input id="fieldProfissao" type="text" style="margin-left:28px" disabled>
+                    </div>
+                    <div>
+                        <label>Sit. Profissão</label>
+                        <select id="selectProfissao" name="selectProfissao" disabled>
+                            <option value="selecioneOpcao" disabled selected>Escolha uma opção</option>
+                            <option value="Empregado - Full Time">Empregado - Full Time</option>
+                            <option value="Empregado - Part Time">Empregado - Part Time</option>
+                            <option value="Trabalhador por conta própria">Trabalhador por conta própria</option>
+                            <option value="Desempregado">Desempregado</option>
+                            <option value="Reformado">Reformado</option>
+                            <option value="Aposentado">Aposentado</option>
+                        </select>
+                        <label>Nível de Escolaridade</label>
+                        <select id="nivelEscolaridade" name="nivelEscolaridade" disabled>
+                            <option value="Nenhum">Nenhum</option>
+                            <option value="Ensino Básico (1º ciclo)">Ensino Básico (1º ciclo)</option>
+                            <option value="Ensino Básico (2º ciclo)">Ensino Básico (2º ciclo)</option>
+                            <option value="Ensino Básico (3º ciclo)">Ensino Básico (3º ciclo)</option>
+                            <option value="Ensino Secundário">Ensino Secundário</option>
+                            <option value="Bacharelato">Bacharelato</option>
+                            <option value="Licenciatura">Licenciatura</option>
+                            <option value="Mestrado">Mestrado</option>
+                            <option value="Doutoramento">Doutoramento</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <a href="validarCandidatura2.html">
+            <button style="margin-left:15px">Página seguinte</button>
+        </a>
+    </div>
+
+    <script src="../scripts/validarCandidatura1.js"> </script>
+</body>
+
+</html>

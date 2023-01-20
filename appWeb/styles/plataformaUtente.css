@@ -1,0 +1,13 @@
+main {
+    background-color: white;
+    backdrop-filter: blur(200px);
+    box-shadow: 0 3rem 5rem rgba(95, 94, 94, 0.214);
+    border: 1px solid #346a91;
+    margin: auto;
+    margin-top: 30px;
+    filter: blur();
+    overflow: auto;
+    width: 50rem;
+    height: 35rem;
+
+}
